@@ -1,0 +1,25 @@
+name: Java Square Cafe
+address: "103 W. Landry St Opelousas, LA 70570"
+email: "info@javasquare.cafe"
+phone: (337) 678-1055
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: info@javasquare.cafe
+baseurl: 
+logo: "/images/logo.png"
+favicon: assets/images/favicon.png
+locale: en_us
+ganalytics: UA-48421544-1
+social: "https://twitter.com/javasquare \nhttps://www.facebook.com/javasquare
+  \nhttps://www.instagram.com/javasquare"
+plugins:
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-archives
