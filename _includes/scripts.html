@@ -1,25 +1,102 @@
-   <!--==============================
-        All Js File
-============================== -->
-<!-- Jquery -->
-<script src="assets/js/vendor/jquery.min.js"></script>
-<!-- Slick Slider -->
-<script src="assets/js/slick.min.js"></script>
-<!-- <script src="assets/js/app.min.js"></script> -->
-<!-- Bootstrap -->
-<script src="assets/js/bootstrap.min.js"></script>
-<!-- Filter -->
-<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<!-- Magnific Popup -->
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<!-- Jquery UI -->
-<script src="assets/js/jquery-ui.min.js"></script>
-<!-- WOW JS (Animation JS) -->
-<script src="assets/js/wow.min.js"></script>
-<!-- Custom Carousel -->
-<script src="assets/js/vscustom-carousel.min.js"></script>
-<!-- Form Js -->
-<script src="assets/js/ajax-mail.js"></script>
-<!-- Main Js File -->
-<script src="assets/js/main.js"></script>
+
+<script>
+    window.RS_MODULES = window.RS_MODULES || {};
+    window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+    window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+    window.RS_MODULES.defered = true;
+    window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+    window.RS_MODULES.type = "compiled";
+</script>
+<a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
+
+<script>
+    if (typeof revslider_showDoubleJqueryError === "undefined") {
+        function revslider_showDoubleJqueryError(sliderID) {
+            console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");
+            console.log("To fix this, you can:");
+            console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");
+            console.log("2. Find the double jQuery.js inclusion and remove it");
+            return "Double Included jQuery Library";
+        }
+    }
+</script>
+
+<style id="rs-plugin-settings-inline-css" type="text/css">
+    p.rs-layer {
+        letter-spacing: 0.02em !important;
+    }
+    span.sc_button_text {
+        letter-spacing: 1.4px !important;
+    }
+    .scroll_down {
+        cursor: pointer !important;
+    }
+    @keyframes moves {
+        0% {
+            bottom: 0px;
+        }
+        50% {
+            bottom: 10px;
+        }
+    }
+    .scroll_down span {
+        font-style: normal !important;
+        transform: rotate(135deg);
+        display: inline-block;
+        font-size: 1.4rem !important;
+        margin-bottom: 1em !important;
+        position: relative;
+    }
+    .scroll_down p {
+        letter-spacing: 2px !important;
+    }
+    .tacticool.tparrows {
+        border-radius: 4px 4px 4px 4px;
+        width: 4.2em;
+        height: 3.295em;
+        line-height: 3.295em;
+        transform: skew(-9deg);
+        background: #18120b;
+        text-align: center;
+        transition: all 0.3s;
+    }
+    .tacticool.tparrows.rs-touchhover {
+        background: #d70000;
+    }
+    .tacticool.tp-leftarrow {
+        left: -5px !important;
+    }
+    .tacticool.tp-rightarrow {
+        left: calc(100% + 5px) !important;
+    }
+    .tacticool.tparrows:before {
+        font-family: "fontello";
+        font-size: 0.95em;
+        display: inline-block;
+    }
+    .tacticool.tparrows.tp-leftarrow:before {
+        content: "\e972";
+        transform: skew(9deg);
+        letter-spacing: -12px;
+    }
+    .tparrows.tp-rightarrow:before {
+        content: "\e956";
+        transform: skew(9deg);
+        letter-spacing: 14px;
+    }
+</style>
+<script type="text/javascript" src="/assets/js/rbtools.min.js" defer async id="tp-tools-js"></script>
+<script type="text/javascript" src="/assets/js/rs6.min.js" defer async id="revmin-js"></script>
+<script type="text/javascript" src="/assets/js/swiper.min.js" id="jquery-swiper-js"></script>
+<script type="text/javascript" src="/assets/js/jquery.magnific-popup.min.js" id="magnific-popup-js"></script>
+<script type="text/javascript" id="trx_addons-js-extra">
+/* <![CDATA[ */
+var TRX_ADDONS_STORAGE = {"ajax_url":"https:\/\/81cac1f8b7be5af80e03314dfafdc5a3.wpxtemp.com\/wp-admin\/admin-ajax.php","ajax_nonce":"f8837ef3a8","site_url":"https:\/\/81cac1f8b7be5af80e03314dfafdc5a3.wpxtemp.com","post_id":"366","vc_edit_mode":"0","popup_engine":"magnific","scroll_progress":"hide","animate_inner_links":"1","add_target_blank":"1","menu_collapse":"1","menu_collapse_icon":"trx_addons_icon-ellipsis-vert","user_logged_in":"0","email_mask":"^([a-zA-Z0-9_\\-]+\\.)*[a-zA-Z0-9_\\-]+@[a-z0-9_\\-]+(\\.[a-z0-9_\\-]+)*\\.[a-z]{2,6}$","msg_ajax_error":"Invalid server answer!","msg_magnific_loading":"Loading image","msg_magnific_error":"Error loading image","msg_error_like":"Error saving your like! Please, try again later.","msg_field_name_empty":"The name can't be empty","msg_field_email_empty":"Too short (or empty) email address","msg_field_email_not_valid":"Invalid email address","msg_field_text_empty":"The message text can't be empty","msg_search_error":"Search error! Try again later.","msg_send_complete":"Send message complete!","msg_send_error":"Transmit failed!","msg_validation_error":"Error data validation!","msg_name_empty":"The name can't be empty","msg_name_long":"Too long name","msg_email_empty":"Too short (or empty) email address","msg_email_long":"E-mail address is too long","msg_email_not_valid":"E-mail address is invalid","msg_text_empty":"The message text can't be empty","ajax_views":"","menu_cache":[".menu_mobile_inner > nav > ul"],"login_via_ajax":"1","msg_login_empty":"The Login field can't be empty","msg_login_long":"The Login field is too long","msg_password_empty":"The password can't be empty and shorter then 4 characters","msg_password_long":"The password is too long","msg_login_success":"Login success! The page should be reloaded in 3 sec.","msg_login_error":"Login failed!","msg_not_agree":"Please, read and check 'Terms and Conditions'","msg_password_not_equal":"The passwords in both fields are not equal","msg_registration_success":"Registration success! Please log in!","msg_registration_error":"Registration failed!","shapes_url":"https:\/\/81cac1f8b7be5af80e03314dfafdc5a3.wpxtemp.com\/wp-content\/themes\/tacticool\/trx_addons\/css\/shapes\/","msg_rating_already_marked":"You have already rated this post with mark {{X}}","elementor_stretched_section_container":"","scroll_to_anchor":"0","update_location_from_anchor":"0","msg_sc_googlemap_not_avail":"Googlemap service is not available","msg_sc_googlemap_geocoder_error":"Error while geocode address"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/assets/js/trx_addons.js" id="trx_addons-js"></script>
+<script type="text/javascript" src="/assets/js/superfish.min.js" id="superfish-js"></script>
+<script type="text/javascript" src="/assets/js/js_composer_front.min.js" id="wpb_composer_front_js-js"></script>
+<script type="text/javascript" src="/assets/js/vc-waypoints.min.js" id="vc_waypoints-js"></script>
+<script id="rs-initialisation-scripts" src="/assets/js/rs_scripts.js"></script>
+<script type="text/javascript" src="/assets/js/scripts.js" id="tacticool-init-js"></script>
