@@ -1,0 +1,31 @@
+site_primary_menu:
+  - menu_title: HOME
+    menu_url: /
+  - menu_title: ABOUT
+    menu_url: /about
+  - menu_title: CONTACT
+    menu_url: /contact
+  - menu_title: PATIENT INFORMATION
+    menu_url: /patient
+  - menu_title: REQUEST APPOINTMENT
+    menu_url: /appointment
+dropdown_menu_title: PROCEDURES
+deopdown_menu_lists:
+  - menu_title: COLORECTAL SURGERY
+    menu_url: /colorectal-surgery
+  - menu_title: HERNIA REPAIR
+    menu_url: /hernia-repair
+  - menu_title: EVLT
+    menu_url: /evlt
+  - menu_title: VASECTOMY
+    menu_url: /vasectomy
+  - menu_title: ANTI-REFLUX SURGERY
+    menu_url: /anti-reflux-surgery
+  - menu_title: BREAST SURGERY
+    menu_url: /breast-surgery
+  - menu_title: ENDOSCOPY AND COLONOSCOPY
+    menu_url: /endoscopy-and-colonoscopy
+  - menu_title: THYROID SURGERY
+    menu_url: /thyroid-surgery
+  - menu_title: GALLBLADDER REMOVAL
+    menu_url: /gallbladder-removal
