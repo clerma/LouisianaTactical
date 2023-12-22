@@ -1,0 +1,7 @@
+- name: First Slide
+  image: /assets/images/dummy.png
+  title: Firearms Training with<br />Certified Trainers
+  text: Team of Professional Veterans
+  link: #
+  link_text: Learn More
+  

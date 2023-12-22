@@ -1,6 +1,6 @@
 ---
 ---
-  #page_preloader { background-color: #18120b !important;background-image: url('{{site.data.general_settings.site_logo_url}}');background-size: 25% }
+  #page_preloader { background-color: #191919 !important;background-image: url('{{site.data.general_settings.site_logo_url}}');background-size: 25% }
   
    /*! This file is auto-generated */
 .wp-block-button__link {
@@ -64,7 +64,7 @@
 	background-size: cover !important;
 }
 .vc_custom_1550747218901 {
-	background-color: #18120b !important;
+	background-color: #191919 !important;
 }
 .vc_custom_1550747228622 {
 	background-image: url(/assets/uploads/2018/05/bg_testimon%EF%B9%96id=357.jpg) !important;
@@ -180,17 +180,17 @@
 	.vc_custom_1554458960912 {
 		padding-top: 1.8em !important;
 		padding-bottom: 1.9em !important;
-		background-color: #1f1913 !important;
+		background-color: #000 !important;
 	}
 	.vc_custom_1554459032508 {
 		padding-top: 1.8em !important;
 		padding-bottom: 1.9em !important;
-		background-color: #1f1913 !important;
+		background-color: #000 !important;
 	}
 	.vc_custom_1547044840472 {
 		padding-top: 0px !important;
 		padding-bottom: 0px !important;
-		background: #18120b url(/assets/uploads/2018/05/footer-bg-transparent-nocopyright%EF%B9%96id=450.png) !important;
+		background: #191919 url(/assets/uploads/2018/05/footer-bg-transparent-nocopyright%EF%B9%96id=450.png) !important;
 		background-position: bottom center !important;
 		background-repeat: no-repeat !important;
 		background-size: cover !important;
@@ -571,7 +571,7 @@
 	.eg-tacticool-courses-element-10 {
 		font-size: 16px !important;
 		line-height: 19px !important;
-		color: #aa9d8f !important;
+		color: #b2b2b2 !important;
 		font-weight: 500 !important;
 		font-style: italic !important;
 		padding: 0px 0px 0px 53px !important;
@@ -647,7 +647,7 @@
 	.eg-tacticool-courses-element-10-a {
 		font-size: 16px !important;
 		line-height: 19px !important;
-		color: #aa9d8f !important;
+		color: #b2b2b2 !important;
 		font-family: "Barlow Condensed", sans-serif !important;
 		font-weight: 500 !important;
 		text-decoration: none !important;

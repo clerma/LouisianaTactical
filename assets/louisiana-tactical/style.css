@@ -2457,9 +2457,9 @@ figure.alignright {
   width: 1290px;
   margin: 0 auto !important; }
 
-.page_content_wrap {
+/* .page_content_wrap {
   padding-top: 6.5rem;
-}
+} */
 
 .remove_margins .page_content_wrap {
   padding-top: 0 !important;
