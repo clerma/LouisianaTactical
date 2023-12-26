@@ -135,7 +135,7 @@
 }
 .vc_custom_1554202746419 {
 	margin-right: -5.9em !important;
-	background-color: #f7f5f2 !important;
+	background-color: #f4f4f4 !important;
 }
 .vc_custom_1549034631112 {
 	margin-left: 0px !important;
@@ -145,7 +145,7 @@
 	padding-right: 2em !important;
 }
 .vc_custom_1549360014844 {
-	background-color: #f7f5f2 !important;
+	background-color: #f4f4f4 !important;
 }
   .wpb_animate_when_almost_visible {
 	opacity: 1;
@@ -199,7 +199,7 @@
 		border-top-width: 1px !important;
 		padding-top: 1.4em !important;
 		padding-bottom: 2em !important;
-		border-top-color: #302a24 !important;
+		border-top-color: rgba(178, 178, 178, 0.30) !important;
 		border-top-style: solid !important;
 	}
 	.vc_custom_1547047845880 {
@@ -600,7 +600,7 @@
 	.eg-tacticool-courses-element-11 {
 		font-size: 31px !important;
 		line-height: 19px !important;
-		color: #907960 !important;
+		color: #b2b2b2 !important;
 		font-weight: 600 !important;
 		font-style: italic !important;
 		display: block !important;
@@ -688,4 +688,17 @@
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
+	}
+	.phone {
+		color: inherit;
+		pointer-events: none;
+		text-decoration: none;
+	}
+	
+	@media only screen and (max-width: 735px) {
+		.phone {
+			color: inherit;
+			pointer-events: auto;
+			text-decoration: none;
+		}
 	}

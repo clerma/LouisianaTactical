@@ -6,3 +6,13 @@ address: 914 Cypress St, Sulphur, LA 70663
 ga_id: 
 head_code: ''
 footer_code: ''
+social:
+  - name: Instagram
+    link: https://instagram.com/scoutrealestateco
+    icon: instagram
+  - name: Facebook
+    link: https://facebook.com/Loiusiana.Tactical
+    icon: facebook
+  # - name: Youtube
+  #   link: https://www.youtube.com/channel/UCnEJTuCvF082zAAjpeasQIA
+  #   icon: youtube

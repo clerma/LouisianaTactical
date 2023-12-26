@@ -1,7 +1,5 @@
 <footer class="footer_wrap footer_custom footer_custom_400 footer_custom_footer-main scheme_dark">
-    <div
-        class="vc_row wpb_row vc_row-fluid vc_custom_1554458960912 vc_row-has-fill vc_row-o-content-middle vc_row-flex shape_divider_top-none shape_divider_bottom-none sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_tablet sc_layouts_hide_on_mobile"
-    >
+    <div class="vc_row wpb_row vc_row-fluid vc_custom_1554458960912 vc_row-has-fill vc_row-o-content-middle vc_row-flex shape_divider_top-none shape_divider_bottom-none sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_tablet sc_layouts_hide_on_mobile">
         <div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
             <div class="vc_column-inner">
                 <div class="wpb_wrapper">
@@ -15,26 +13,11 @@
                                                 <div id="widget_socials_1690576809" class="widget_area sc_widget_socials vc_widget_socials wpb_content_element">
                                                     <aside id="widget_socials_1690576809_widget" class="widget widget_socials">
                                                         <div class="socials_wrap sc_align_left">
-                                                            <a
-                                                                target="_blank"
-                                                                href="https://www.facebook.com/AxiomThemes-505060569826537/"
-                                                                class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"
-                                                            >
-                                                                <span class="social_icon social_icon_facebook"><span class="icon-facebook"></span></span>
+                                                            {% for social in site.data.general_settings.social %}
+                                                            <a target="_blank" href="{{social.link}}" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
+                                                                <span class="social_icon social_icon_{{social.icon}}"><span class="icon-{{social.icon}}"></span></span>
                                                             </a>
-                                                            <a target="_blank" href="https://twitter.com/ThemesAxiom" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
-                                                                <span class="social_icon social_icon_twitter"><span class="icon-twitter"></span></span>
-                                                            </a>
-                                                            <a target="_blank" href="https://www.instagram.com/axiom_themes/" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
-                                                                <span class="social_icon social_icon_instagramm"><span class="icon-instagramm"></span></span>
-                                                            </a>
-                                                            <a
-                                                                target="_blank"
-                                                                href="https://www.youtube.com/channel/UCBjqhuwKj3MfE3B6Hg2oA8Q"
-                                                                class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"
-                                                            >
-                                                                <span class="social_icon social_icon_youtube-1"><span class="icon-youtube-1"></span></span>
-                                                            </a>
+                                                           {% endfor %}
                                                         </div>
                                                     </aside>
                                                 </div>
@@ -60,11 +43,11 @@
                                             <div class="wpb_text_column wpb_content_element">
                                                 <div class="wpb_wrapper">
                                                     <script>
-                                                        (function () {
+                                                        (function() {
                                                             window.mc4wp = window.mc4wp || {
                                                                 listeners: [],
                                                                 forms: {
-                                                                    on: function (evt, cb) {
+                                                                    on: function(evt, cb) {
                                                                         window.mc4wp.listeners.push({
                                                                             event: evt,
                                                                             callback: cb,
@@ -103,9 +86,7 @@
             </div>
         </div>
     </div>
-    <div
-        class="vc_row wpb_row vc_row-fluid vc_custom_1554459032508 vc_row-has-fill vc_row-o-content-middle vc_row-flex shape_divider_top-none shape_divider_bottom-none sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_wide sc_layouts_hide_on_desktop sc_layouts_hide_on_notebook"
-    >
+    <div class="vc_row wpb_row vc_row-fluid vc_custom_1554459032508 vc_row-has-fill vc_row-o-content-middle vc_row-flex shape_divider_top-none shape_divider_bottom-none sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_wide sc_layouts_hide_on_desktop sc_layouts_hide_on_notebook">
         <div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
             <div class="vc_column-inner">
                 <div class="wpb_wrapper">
@@ -119,24 +100,18 @@
                                                 <div id="widget_socials_485575219" class="widget_area sc_widget_socials vc_widget_socials wpb_content_element">
                                                     <aside id="widget_socials_485575219_widget" class="widget widget_socials">
                                                         <div class="socials_wrap sc_align_center">
-                                                            <a
-                                                                target="_blank"
-                                                                href="https://www.facebook.com/AxiomThemes-505060569826537/"
-                                                                class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"
-                                                            >
-                                                                <span class="social_icon social_icon_facebook"><span class="icon-facebook"></span></span>
+                                                            {% for social in site.data.general_settings.social %}
+                                                            <a target="_blank" href="{{social.link}}" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
+                                                                <span class="social_icon social_icon_{{social.icon}}"><span class="icon-{{social.icon}}"></span></span>
                                                             </a>
+                                                            {% endfor %}
                                                             <a target="_blank" href="https://twitter.com/ThemesAxiom" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
                                                                 <span class="social_icon social_icon_twitter"><span class="icon-twitter"></span></span>
                                                             </a>
                                                             <a target="_blank" href="https://www.instagram.com/axiom_themes/" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
                                                                 <span class="social_icon social_icon_instagramm"><span class="icon-instagramm"></span></span>
                                                             </a>
-                                                            <a
-                                                                target="_blank"
-                                                                href="https://www.youtube.com/channel/UCBjqhuwKj3MfE3B6Hg2oA8Q"
-                                                                class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"
-                                                            >
+                                                            <a target="_blank" href="https://www.youtube.com/channel/UCBjqhuwKj3MfE3B6Hg2oA8Q" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
                                                                 <span class="social_icon social_icon_youtube-1"><span class="icon-youtube-1"></span></span>
                                                             </a>
                                                         </div>
@@ -153,11 +128,11 @@
                                             <div class="wpb_text_column wpb_content_element">
                                                 <div class="wpb_wrapper">
                                                     <script>
-                                                        (function () {
+                                                        (function() {
                                                             window.mc4wp = window.mc4wp || {
                                                                 listeners: [],
                                                                 forms: {
-                                                                    on: function (evt, cb) {
+                                                                    on: function(evt, cb) {
                                                                         window.mc4wp.listeners.push({
                                                                             event: evt,
                                                                             callback: cb,
@@ -208,8 +183,8 @@
                                     <div class="vc_column-inner vc_custom_1547047845880">
                                         <div class="wpb_wrapper">
                                             <div class="sc_layouts_item">
-                                                <a href="index.html" id="sc_layouts_logo_2079416858" class="sc_layouts_logo sc_layouts_logo_default">
-                                                    <img class="logo_image" src="/assets/uploads/2018/05/logo-3.png" alt="Tacticool" width="155" height="69" />
+                                                <a href="/" id="sc_layouts_logo_2079416858" class="sc_layouts_logo sc_layouts_logo_default">
+                                                    <img class="logo_image" src="/assets/images/landscape-white.webp" alt="Lousians Tactical" width="155" height="69" />
                                                 </a>
 
                                                 <!-- /.sc_layouts_logo -->
@@ -274,10 +249,10 @@
                                                 <div class="widget widget_text">
                                                     <h2 class="widgettitle">Get in touch</h2>
                                                     <div class="textwidget">
-                                                        <h6><a href="tel:+18001234567">+1 800 123 45 67</a></h6>
+                                                        <h6><a href="tel:{{site.data.general_settings.phone}}" class="phone">{{site.data.general_settings.phone}}</a></h6>
                                                         <p>
-                                                            82 12th Street, Office 14, LA<br />
-                                                            <a href="mailto:support@example.com">support@example.com</a>
+                                                           
+                                                            <a href="mailto:{{site.data.general_settings.email}}">{{site.data.general_settings.email}}</a>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -295,7 +270,7 @@
                             <div class="vc_wp_text wpb_content_element">
                                 <div class="widget widget_text">
                                     <div class="textwidget">
-                                        <p><a href="#" target="_blank" rel="noopener noreferrer">Company Name</a> 2024. All Rights Reserved.</p>
+                                        <p><a href="/" target="_blank" title="{{site.data.general_settings.site_name}}">{{site.data.general_settings.site_name}}</a> {{ site.time | date: "%Y" }}. All Rights Reserved.</p>
                                     </div>
                                 </div>
                             </div>

@@ -6654,7 +6654,7 @@ section.wp-block-cover-image h2 a {
 .wp-block-cover-image-text a:hover,
 .wp-block-cover-text a:hover,
 section.wp-block-cover-image h2 a:hover {
-  color: #261e15 !important; }
+  color: #373736 !important; }
 
 .wp-block-cover + .wp-block-cover {
   margin-top: 30px; }
@@ -13621,7 +13621,7 @@ a.tribe-events-ical.tribe-events-button {
   transform: skew(0deg) !important; }
 
 .esgbox-container button:not(.components-button):hover {
-  color: #907960; }
+  color: #b2b2b2; }
 
 .eg-tacticool-courses-wrapper .esg-media-poster,
 .eg-tacticool-courses-wrapper .eg-tacticool-courses-container {
