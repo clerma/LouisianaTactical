@@ -13444,7 +13444,7 @@ blockquote.sc_promo_text {
 .custom-logo-link img,
 .sc_layouts_logo img {
   max-height: 6em;
-  width: auto; }
+  width: 75%; }
 
 .sc_layouts_row_type_compact .custom-logo-link img,
 .sc_layouts_row_type_compact .sc_layouts_logo img {

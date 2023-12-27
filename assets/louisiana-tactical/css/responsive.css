@@ -888,8 +888,7 @@
   body.no_layout.menu_style_right .sc_layouts_row_fixed_on {
     margin-right: 0 !important; }
   .page_content_wrap {
-    padding-top: 6rem;
-    padding-bottom: 6rem; }
+    padding-top: 6rem; }
   .top_panel.with_bg_image {
     min-height: 20em; }
   .thumbnail_type_fullwidth.post_header_position_default .page_content_wrap > .header_content_wrap,
@@ -1581,7 +1580,7 @@
     padding: 0 1.5em; }
   .page_content_wrap {
     padding-top: 4rem;
-    padding-bottom: 4rem; }
+    /* padding-bottom: 4rem; } */
   .thumbnail_type_fullwidth .header_content_wrap .post_featured.post_featured_bg {
     height: 25rem; }
   .body_style_boxed header .sc_layouts_row_type_compact {

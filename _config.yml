@@ -17,22 +17,61 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+include: ['_pages', '_data', 'js',]
+permalink: /:title
+defaults:
+-scope:
+  path: ""
+  values:
+    layout: default
+    _options:
+      content: &content_defaults
+        uploads_dir: "uploads/:title"
+        format: p h1 h2 h3 h4 h5 h6 div
+        styles: /assets/css/theme.css
+        undo: true
+        redo: true
+        left: text-left
+        center: text-center
+        right: text-right
+        justify: justify-content-center
+        bold: true
+        italic: true
+        underline: true
+        strike: true
+        subscript: false
+        superscript: false
+        blockquote: true
+        table: true
+        copyformatting: true
+        removeformat: true
+        numberedlist: true
+        bulletedlist: true
+        outdent: false
+        indent: false
+        image: true
+        link: true
+        embed: true
+collections:
+ properties:
+   output: true   
+-scope:
+      type: pages
+      path: _pages/index.html
+      values:
+        permalink:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
 
 # Build settings
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,15 +1,12 @@
 <header class="top_panel top_panel_custom top_panel_custom_439 top_panel_custom_main-header without_bg_image">
-    <div
-        class="vc_row wpb_row vc_row-fluid vc_custom_1549533673493 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex shape_divider_top-none shape_divider_bottom-none sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_fixed sc_layouts_hide_on_mobile"
-    >
+    <div class="vc_row wpb_row vc_row-fluid vc_custom_1549533673493 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex shape_divider_top-none shape_divider_bottom-none sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_fixed sc_layouts_hide_on_mobile">
         <div class="wpb_column vc_column_container vc_col-sm-2 vc_col-xs-4 sc_layouts_column sc_layouts_column_align_left sc_layouts_column_icons_position_left">
             <div class="vc_column-inner">
                 <div class="wpb_wrapper">
                     <div class="sc_layouts_item">
                         <a href="/" id="sc_layouts_logo_302013865" class="sc_layouts_logo sc_layouts_logo_default">
-                            <img class="logo_image" src="{{site.data.general_settings.site_logo_url}}" srcset="{{site.data.general_settings.site_logo_url}}" alt="Tacticool" width="155" height="69" />
+                            <img class="logo_image" src="{{site.data.general_settings.site_logo_url}}" srcset="{{site.data.general_settings.site_logo_url}}" alt="Louisiana Tactical" width="155" height="69" />
                         </a>
-
                         <!-- /.sc_layouts_logo -->
                     </div>
                 </div>
@@ -190,7 +187,7 @@
                     {% endcomment %}
                     <div class="sc_layouts_item">
                         <div id="sc_button_292864560" class="sc_item_button sc_button_wrap sc_align_right vc_custom_1554198621272">
-                            <a href="events/index.html" class="sc_button hide_on_mobile hide_on_tablet sc_button_default sc_button_size_small sc_button_icon_left color_style_link2">
+                            <a href="/" class="sc_button hide_on_mobile hide_on_tablet sc_button_default sc_button_size_small sc_button_icon_left color_style_link2">
                                 <span class="sc_button_text"><span class="sc_button_title">Free Trial Training </span></span>
                                 <!-- /.sc_button_text -->
                             </a>
@@ -210,7 +207,7 @@
                 <div class="wpb_wrapper">
                     <div class="sc_layouts_item">
                         <a href="/" id="sc_layouts_logo_838971085" class="sc_layouts_logo sc_layouts_logo_default">
-                            <img class="logo_image" src="/assets/uploads/2018/05/logo-2.png" srcset="/assets/uploads/2018/05/retina-logo-2.png 2x" alt="Tacticool" width="155" height="69" />
+                            <img class="logo_image" src="{{site.data.general_settings.site_logo_url}}" srcset="{{site.data.general_settings.site_logo_url}}" alt="Louisiana Tactical" width="155" height="69" />
                         </a>
 
                         <!-- /.sc_layouts_logo -->
@@ -257,7 +254,7 @@
 <div class="menu_mobile menu_mobile_fullscreen scheme_dark">
     <div class="menu_mobile_inner">
         <a class="menu_mobile_close icon-cancel"></a>
-        <a class="sc_layouts_logo" href="/"> <img src="/assets/uploads/2018/05/logo-3.png" srcset="/assets/uploads/2018/05/retina-logo-3-300x134.png" alt="Tacticool" width="155" height="69" /> </a>
+        <a class="sc_layouts_logo " href="/"> <img class="mobile-logo" src="/assets/images/landscape-white.webp" srcset="/assets/images/landscape-white.webp" alt="Louisiana Tactical" width="50%" height="auto" /> </a>
         <nav class="menu_mobile_nav_area" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <ul id="menu_mobile_1545967986">
                 <li id="menu_mobile-item-162" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-162">
@@ -382,18 +379,11 @@
             </div>
         </div>
         <div class="socials_mobile">
-            <a target="_blank" href="https://www.facebook.com/AxiomThemes-505060569826537/" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
-                <span class="social_icon social_icon_facebook"><span class="icon-facebook"></span></span>
+            {% for social in site.data.general_settings.social %}
+            <a target="_blank" href="{{social.link}}" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
+                <span class="social_icon social_icon_{{social.icon}}"><span class="icon-{{social.icon}}"></span></span>
             </a>
-            <a target="_blank" href="https://twitter.com/ThemesAxiom" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
-                <span class="social_icon social_icon_twitter"><span class="icon-twitter"></span></span>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/axiom_themes/" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
-                <span class="social_icon social_icon_instagramm"><span class="icon-instagramm"></span></span>
-            </a>
-            <a target="_blank" href="https://www.youtube.com/channel/UCBjqhuwKj3MfE3B6Hg2oA8Q" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
-                <span class="social_icon social_icon_youtube-1"><span class="icon-youtube-1"></span></span>
-            </a>
+           {% endfor %}
         </div>
     </div>
 </div>
