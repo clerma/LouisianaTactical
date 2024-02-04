@@ -1,6 +1,6 @@
 ---
 ---
-  #page_preloader { background-color: #191919 !important;background-image: url('{{site.data.general_settings.site_logo_url}}');background-size: 25% }
+  #page_preloader { background-color: #010101 !important;background-image: url('{{site.data.general_settings.site_logo_url}}');background-size: 25% }
   
    /*! This file is auto-generated */
 .wp-block-button__link {
