@@ -1,277 +1,78 @@
-<footer class="footer_wrap footer_custom footer_custom_400 footer_custom_footer-main scheme_dark">
-    <div class="vc_row wpb_row vc_row-fluid vc_custom_1554458960912 vc_row-has-fill vc_row-o-content-middle vc_row-flex shape_divider_top-none shape_divider_bottom-none sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_tablet sc_layouts_hide_on_mobile">
-        <div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
-            <div class="vc_column-inner">
-                <div class="wpb_wrapper">
-                    <div id="sc_content_1028252011" class="sc_content sc_content_default sc_content_width_1_1 sc_float_center">
-                        <div class="sc_content_container">
-                            <div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-content-middle vc_row-flex shape_divider_top-none shape_divider_bottom-none">
-                                <div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column_icons_position_left">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="sc_layouts_item">
-                                                <div id="widget_socials_1690576809" class="widget_area sc_widget_socials vc_widget_socials wpb_content_element">
-                                                    <aside id="widget_socials_1690576809_widget" class="widget widget_socials">
-                                                        <div class="socials_wrap sc_align_left">
-                                                            {% for social in site.data.general_settings.social %}
-                                                            <a target="_blank" href="{{social.link}}" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
-                                                                <span class="social_icon social_icon_{{social.icon}}"><span class="icon-{{social.icon}}"></span></span>
-                                                            </a>
-                                                           {% endfor %}
-                                                        </div>
-                                                    </aside>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wpb_column vc_column_container vc_col-sm-6 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="sc_layouts_item">
-                                                <div id="sc_title_39808656" class="sc_title sc_title_default">
-                                                    <h4 class="sc_item_title sc_title_title sc_align_center sc_item_title_style_default sc_item_title_tag"><span class="sc_item_title_text">Stay Connected</span></h4>
-                                                </div>
-                                                <!-- /.sc_title -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column sc_layouts_column_align_right sc_layouts_column_icons_position_left">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="wpb_text_column wpb_content_element">
-                                                <div class="wpb_wrapper">
-                                                    <script>
-                                                        (function() {
-                                                            window.mc4wp = window.mc4wp || {
-                                                                listeners: [],
-                                                                forms: {
-                                                                    on: function(evt, cb) {
-                                                                        window.mc4wp.listeners.push({
-                                                                            event: evt,
-                                                                            callback: cb,
-                                                                        });
-                                                                    },
-                                                                },
-                                                            };
-                                                        })();
-                                                    </script>
-                                                    <!-- Mailchimp for WordPress v4.9.9 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
-                                                    <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-447" method="post" data-id="447" data-name="Subscribe form">
-                                                        <div class="mc4wp-form-fields">
-                                                            <p>
-                                                                <input type="email" name="EMAIL" placeholder="Enter your email" required />
-                                                                <button type="submit"><span class="icon icon-target-3"></span></button>
-                                                            </p>
-                                                        </div>
-                                                        <label style="display: none !important;">
-                                                            Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" />
-                                                        </label>
-                                                        <input type="hidden" name="_mc4wp_timestamp" value="1700102114" /><input type="hidden" name="_mc4wp_form_id" value="447" />
-                                                        <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
-                                                        <div class="mc4wp-response"></div>
-                                                    </form>
-                                                    <!-- / Mailchimp for WordPress Plugin -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+  <!--==============================
+Footer Area
+==============================-->
+<footer class="footer-wrapper footer-layout1 bg2 space-top space-md-top" data-bg-src="assets/img/bg/foter-bg-img-1.jpg">
+    <div class="container">
+        <div class="widget-area space-bottom space-md-bottom">
+            <div class="row align-items-start justify-content-center justify-content-lg-between">
+                <div class="col-lg-4 col-md-10 text-md-center text-lg-start">
+                    <div class="widget footer-widget">
+                        <div class="vs-widget-about text-center-md">
+                            <div class="foter-logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo-3.svg" alt="Footer Logo">
+                                </a>
+                            </div>
+                            <p class="footer-text">It is a long established fact that a reader will be distracted by the readable content Lorem ipsum placeholder text commonly used.</p>
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
                             </div>
                         </div>
                     </div>
-                    <!-- /.sc_content -->
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h5 class="widget_title">Useful Links</h5>
+                        <div class="menu-all-pages-container">
+                            <ul>
+                                <li><a href="index.html">Home Page</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="blog.html">Hunting Services</a></li>
+                                <li><a href="blog.html">Our Blog</a></li>
+                                <li><a href="shop.html">Visit Shop</a></li>
+                                <li><a href="cart.html">Check Cart</a></li>
+                                <li><a href="blog.html">Wishlist</a></li>
+                                <li><a href="blog.html">Hunting Team</a></li>
+                                <li><a href="contact.html">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="widget widget_nav_menu footer-widget padding-l">
+                        <h5 class="widget_title">Contact Us</h5>
+                        <p class="info-footer"><i class="fas fa-envelope"></i><a href="mailto:info@example.com">info@example.com</a></p>
+                        <p class="info-footer"><i class="fas fa-phone-alt"></i><a href="tel:+56923162156">+569 2316 2156</a></p>
+                        <form class="footer-newsletter pt-2">
+                            <input class="form-control mb-25" type="email" placeholder="Enter Your Email" required="">
+                            <button type="submit" class="vs-btn mask-style1">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="vc_row wpb_row vc_row-fluid vc_custom_1554459032508 vc_row-has-fill vc_row-o-content-middle vc_row-flex shape_divider_top-none shape_divider_bottom-none sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_wide sc_layouts_hide_on_desktop sc_layouts_hide_on_notebook">
-        <div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
-            <div class="vc_column-inner">
-                <div class="wpb_wrapper">
-                    <div id="sc_content_350002236" class="sc_content sc_content_default sc_content_width_1_1 sc_float_center">
-                        <div class="sc_content_container">
-                            <div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-content-middle vc_row-flex shape_divider_top-none shape_divider_bottom-none">
-                                <div class="wpb_column vc_column_container vc_col-sm-6 sc_layouts_column sc_layouts_column_align_left sc_layouts_column_icons_position_left">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="sc_layouts_item">
-                                                <div id="widget_socials_485575219" class="widget_area sc_widget_socials vc_widget_socials wpb_content_element">
-                                                    <aside id="widget_socials_485575219_widget" class="widget widget_socials">
-                                                        <div class="socials_wrap sc_align_center">
-                                                            {% for social in site.data.general_settings.social %}
-                                                            <a target="_blank" href="{{social.link}}" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
-                                                                <span class="social_icon social_icon_{{social.icon}}"><span class="icon-{{social.icon}}"></span></span>
-                                                            </a>
-                                                            {% endfor %}
-                                                           
-                                                        </div>
-                                                    </aside>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wpb_column vc_column_container vc_col-sm-6 sc_layouts_column_icons_position_left">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="vc_empty_space hide_on_wide hide_on_desktop hide_on_notebook hide_on_mobile" style="height: 0.5em;"><span class="vc_empty_space_inner"></span></div>
-                                            <div class="wpb_text_column wpb_content_element">
-                                                <div class="wpb_wrapper">
-                                                    <script>
-                                                        (function() {
-                                                            window.mc4wp = window.mc4wp || {
-                                                                listeners: [],
-                                                                forms: {
-                                                                    on: function(evt, cb) {
-                                                                        window.mc4wp.listeners.push({
-                                                                            event: evt,
-                                                                            callback: cb,
-                                                                        });
-                                                                    },
-                                                                },
-                                                            };
-                                                        })();
-                                                    </script>
-                                                    <!-- Mailchimp for WordPress v4.9.9 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
-                                                    <form id="mc4wp-form-2" class="mc4wp-form mc4wp-form-447" method="post" data-id="447" data-name="Subscribe form">
-                                                        <div class="mc4wp-form-fields">
-                                                            <p>
-                                                                <input type="email" name="EMAIL" placeholder="Enter your email" required />
-                                                                <button type="submit"><span class="icon icon-target-3"></span></button>
-                                                            </p>
-                                                        </div>
-                                                        <label style="display: none !important;">
-                                                            Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" />
-                                                        </label>
-                                                        <input type="hidden" name="_mc4wp_timestamp" value="1700102114" /><input type="hidden" name="_mc4wp_form_id" value="447" />
-                                                        <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-2" />
-                                                        <div class="mc4wp-response"></div>
-                                                    </form>
-                                                    <!-- / Mailchimp for WordPress Plugin -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.sc_content -->
+    <div class="copyright bg-theme">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <p class="mb-0 link-inherit fw-light text-white">&copy; 2024 <a href="index.html">Huntar</a>. All Rights Reserved By <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="vc_row wpb_row vc_row-fluid vc_custom_1547044840472 vc_row-has-fill shape_divider_top-none shape_divider_bottom-none sc_layouts_row sc_layouts_row_type_normal">
-        <div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
-            <div class="vc_column-inner">
-                <div class="wpb_wrapper">
-                    <div id="sc_content_891964473" class="sc_content sc_content_default sc_content_width_1_1 sc_float_center">
-                        <div class="sc_content_container">
-                            <div class="vc_empty_space" style="height: 5.5em;"><span class="vc_empty_space_inner"></span></div>
-                            <div class="vc_row wpb_row vc_inner vc_row-fluid shape_divider_top-none shape_divider_bottom-none">
-                                <div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column_icons_position_left">
-                                    <div class="vc_column-inner vc_custom_1547047845880">
-                                        <div class="wpb_wrapper">
-                                            <div class="sc_layouts_item">
-                                                <a href="/" id="sc_layouts_logo_2079416858" class="sc_layouts_logo sc_layouts_logo_default">
-                                                    <img class="logo_image footer-logo" src="/assets/images/landscape-white.webp" alt="Lousians Tactical" width="155" height="69" />
-                                                </a>
-
-                                                <!-- /.sc_layouts_logo -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column_icons_position_left">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="vc_wp_custommenu wpb_content_element">
-                                                <div class="widget widget_nav_menu">
-                                                    <h2 class="widgettitle">Courses</h2>
-                                                    <div class="menu-courses-container">
-                                                        <ul id="menu-courses" class="menu">
-                                                            <li id="menu-item-390" class="menu-item menu-item-type-post_type menu-item-object-cpt_courses menu-item-390">
-                                                                <a href="courses/carbine-training/index.html">Carbine Training</a>
-                                                            </li>
-                                                            <li id="menu-item-391" class="menu-item menu-item-type-post_type menu-item-object-cpt_courses menu-item-391">
-                                                                <a href="courses/rifle-training/index.html">Rifle Training</a>
-                                                            </li>
-                                                            <li id="menu-item-392" class="menu-item menu-item-type-post_type menu-item-object-cpt_courses menu-item-392">
-                                                                <a href="courses/gun-service-course/index.html">Gun Service Course</a>
-                                                            </li>
-                                                            <li id="menu-item-393" class="menu-item menu-item-type-post_type menu-item-object-cpt_courses menu-item-393">
-                                                                <a href="courses/tactical-medicine/index.html">Tactical Medicine</a>
-                                                            </li>
-                                                            <li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-cpt_courses menu-item-394">
-                                                                <a href="courses/shotgun-course/index.html">Shotgun Course</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column_icons_position_left">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="vc_wp_custommenu wpb_content_element">
-                                                <div class="widget widget_nav_menu">
-                                                    <h2 class="widgettitle">Company Info</h2>
-                                                    <div class="menu-company-info-container">
-                                                        <ul id="menu-company-info" class="menu">
-                                                            <li id="menu-item-399" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-399"><a href="event/index.html">Events</a></li>
-                                                            <li id="menu-item-395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395"><a href="our-mission/index.html">Our Mission</a></li>
-                                                            <li id="menu-item-397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397"><a href="our-services/index.html">Services</a></li>
-                                                            <li id="menu-item-396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396"><a href="our-history/index.html">Our History</a></li>
-                                                            <li id="menu-item-398" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-398"><a href="the-ranges/index.html">The Ranges</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column_icons_position_left">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="vc_wp_text wpb_content_element">
-                                                <div class="widget widget_text">
-                                                    <h2 class="widgettitle">Get in touch</h2>
-                                                    <div class="textwidget">
-                                                        <h6><a href="tel:{{site.data.general_settings.phone}}" class="phone">{{site.data.general_settings.phone}}</a></h6>
-                                                        <p>
-                                                           
-                                                            <a href="mailto:{{site.data.general_settings.email}}">{{site.data.general_settings.email}}</a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="vc_empty_space" style="height: 4em;"><span class="vc_empty_space_inner"></span></div>
-                        </div>
-                    </div>
-                    <!-- /.sc_content -->
-                    <div id="sc_content_962340240" class="sc_content sc_content_default sc_content_width_1_1 sc_float_center vc_custom_1547043415219">
-                        <div class="sc_content_container">
-                            <div class="vc_wp_text wpb_content_element">
-                                <div class="widget widget_text">
-                                    <div class="textwidget">
-                                        <p><a href="/" target="_blank" title="{{site.data.general_settings.site_name}}">{{site.data.general_settings.site_name}}</a> {{ site.time | date: "%Y" }}. All Rights Reserved.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.sc_content -->
+                <div class="col-lg-6 text-start text-md-end">
+                    <ul class="menu list-style-none">
+                        <li><a href="index.html">Privacy</a></li>
+                        <li><a href="about-v1.html">Terms</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about-v2.html">About</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-<!-- /.footer_wrap -->
+<!-- Scroll To Top -->
+<a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
