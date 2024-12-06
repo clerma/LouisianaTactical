@@ -1084,11 +1084,12 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   color: var(--white-color);
 }
 .preloader .loader {
-  width: 48px;
-  height: 48px;
+  width: 10em;
+  height: 10em;
   display: inline-block;
   position: relative;
   transform: rotate(45deg);
+  padding-bottom: 10em;
 }
 .preloader .loader::before {
   content: "";
@@ -3504,7 +3505,7 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   left: 150px;
   margin: 0;
   right: auto;
-  background-color: rgba(159, 151, 79, 0.24);
+  background-color: rgba(55, 55, 54,  .46);
   color: var(--white-color);
   transform: translateY(-50%);
   /* Medium Large devices */
