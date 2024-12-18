@@ -2656,6 +2656,7 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
 @media (max-width: 767px) {
   .header_layout5 .logo {
     max-width: 140px;
+    width: 100%;
   }
   .header_layout5 .contact-box .icon-box {
     --icon-size: auto;
@@ -14229,5 +14230,3 @@ h6.title-color2 a:hover {
     padding-bottom: calc(var(--section-space-mobile) - 30px);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
