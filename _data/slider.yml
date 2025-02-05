@@ -1,7 +1,17 @@
-- name: First Slide
-  image: /assets/images/dummy.png
-  title: Firearms Training with<br />Certified Trainers
-  text: Team of Professional Veterans
-  link: #
-  link_text: Learn More
-  
+- name: "First Slide"
+  image: "/assets/images/service-6-copyright.jpg"
+  thumbnail: "/assets/images/service-6-copyright-100x50.jpg"
+  title: "Firearms Training with<br>Certified Trainers"
+  text: "Team of Professional Combat Veterans"
+  link: "/our-mission/"
+  link_text: "More about Us"
+  bg_color: "rgba(35, 30, 24, 0.82)"  # Background color for overlay
+
+- name: "Second Slide"
+  image: "/assets/images/slider_bg-copyright.jpg"
+  thumbnail: "/assets/images/service-7-copyright-100x50.jpg"
+  title: "Advanced Tactical Training"
+  text: "Learn from Combat Veterans"
+  link: "/training-courses/"
+  link_text: "Explore Training"
+  bg_color: "rgba(30, 35, 24, 0.75)"
