@@ -3,29 +3,58 @@ site_primary_menu:
     menu_url: /
   - menu_title: ABOUT
     menu_url: /about
+  - menu_title: SERVICES
+    menu_url: /services
+  - menu_title: PRODUCTS
+    menu_url: /products
   - menu_title: CONTACT
     menu_url: /contact
-  - menu_title: PATIENT INFORMATION
-    menu_url: /patient
-  - menu_title: REQUEST APPOINTMENT
-    menu_url: /appointment
-dropdown_menu_title: PROCEDURES
-deopdown_menu_lists:
-  - menu_title: COLORECTAL SURGERY
-    menu_url: /colorectal-surgery
-  - menu_title: HERNIA REPAIR
-    menu_url: /hernia-repair
-  - menu_title: EVLT
-    menu_url: /evlt
-  - menu_title: VASECTOMY
-    menu_url: /vasectomy
-  - menu_title: ANTI-REFLUX SURGERY
-    menu_url: /anti-reflux-surgery
-  - menu_title: BREAST SURGERY
-    menu_url: /breast-surgery
-  - menu_title: ENDOSCOPY AND COLONOSCOPY
-    menu_url: /endoscopy-and-colonoscopy
-  - menu_title: THYROID SURGERY
-    menu_url: /thyroid-surgery
-  - menu_title: GALLBLADDER REMOVAL
-    menu_url: /gallbladder-removal
+
+dropdown_menu_title: FEATURED ITEMS
+dropdown_menu_lists:
+  - menu_title: FIREARMS
+    menu_url: /firearms
+  - menu_title: AMMUNITION
+    menu_url: /ammunition
+  - menu_title: ACCESSORIES
+    menu_url: /accessories
+  - menu_title: TRAINING
+    menu_url: /training
+  - menu_title: GEAR
+    menu_url: /gear
+  - menu_title: CUSTOM BUILDS
+    menu_url: /custom-builds
+  - menu_title: GUNSMITHING
+    menu_url: /gunsmithing
+  - menu_title: TACTICAL EQUIPMENT
+    menu_url: /tactical-equipment
+  - menu_title: SAFETY EQUIPMENT
+    menu_url: /safety-equipment
+
+footer_courses_menu:
+  title: Courses
+  items:
+    - menu_title: Carbine Training
+      menu_url: /courses/carbine-training
+    - menu_title: Rifle Training
+      menu_url: /courses/rifle-training
+    - menu_title: Gun Service Course
+      menu_url: /courses/gun-service-course
+    - menu_title: Tactical Medicine
+      menu_url: /courses/tactical-medicine
+    - menu_title: Shotgun Course
+      menu_url: /courses/shotgun-course
+
+footer_company_menu:
+  title: Company Info
+  items:
+    - menu_title: Events
+      menu_url: /event
+    - menu_title: Our Mission
+      menu_url: /our-mission
+    - menu_title: Services
+      menu_url: /our-services
+    - menu_title: Our History
+      menu_url: /our-history
+    - menu_title: The Ranges
+      menu_url: /the-ranges
