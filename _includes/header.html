@@ -74,141 +74,53 @@
             </div>
         </div>
     </div>
+
+    <!-- Mobile Menu Button Section (Added back) -->
+    <div class="vc_row wpb_row vc_row-fluid vc_custom_1549547666558 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex shape_divider_top-none shape_divider_bottom-none sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_fixed
+    sc_layouts_hide_on_wide sc_layouts_hide_on_desktop sc_layouts_hide_on_notebook sc_layouts_hide_on_tablet">
+        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-xs-5 sc_layouts_column sc_layouts_column_align_left sc_layouts_column_icons_position_left">
+            <div class="vc_column-inner">
+                <div class="wpb_wrapper">
+                    <div class="sc_layouts_item">
+                        <a href="/" id="sc_layouts_logo_80516440" class="sc_layouts_logo sc_layouts_logo_default">
+                            <img class="logo_image" src="{{ site.data.general_settings.site_logo_url }}" srcset="{{ site.data.general_settings.site_logo_url }}" alt="Louisiana Tactical" width="155" height="69">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-xs-7 vc_col-has-fill sc_layouts_column sc_layouts_column_align_right sc_layouts_column_icons_position_left">
+            <div class="vc_column-inner vc_custom_1549547671474">
+                <div class="wpb_wrapper">
+                    <div class="sc_layouts_item">
+                        <div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
+                            <a class="sc_layouts_item_link sc_layouts_iconed_text_link" href="#">
+                                <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon trx_addons_icon-menu"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
+
+<!-- Mobile Navigation -->
 <div class="menu_mobile_overlay"></div>
 <div class="menu_mobile menu_mobile_fullscreen scheme_dark">
     <div class="menu_mobile_inner">
         <a class="menu_mobile_close icon-cancel"></a>
-        <a class="sc_layouts_logo " href="/"> <img class="mobile-logo" src="/assets/images/landscape-white.webp" srcset="/assets/images/landscape-white.webp" alt="Louisiana Tactical" width="50%" height="auto" /> </a>
+        <a class="sc_layouts_logo " href="/">
+            <img class="mobile-logo" src="/assets/images/landscape-white.webp" srcset="/assets/images/landscape-white.webp" alt="Louisiana Tactical" width="50%" height="auto" />
+        </a>
         <nav class="menu_mobile_nav_area" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <ul id="menu_mobile_1545967986">
-                <li id="menu_mobile-item-162" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-162">
-                    <a href="#"><span>Home</span></a>
-                    <ul class="sub-menu">
-                        <li id="menu_mobile-item-387" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-366 current_page_item menu-item-387">
-                            <a href="/" aria-current="page"><span>Home 1</span></a>
-                        </li>
-                        <li id="menu_mobile-item-389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-389">
-                            <a href="/"><span>Home 2</span></a>
-                        </li>
-                        <li id="menu_mobile-item-388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-388">
-                            <a href="home-boxed/index.html"><span>Home Boxed</span></a>
-                        </li>
-                    </ul>
+                {% for item in site.data.site_navigation.site_primary_menu %}
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                    <a href="{{ item.menu_url }}"><span>{{ item.menu_title }}</span></a>
                 </li>
-                <li id="menu_mobile-item-163" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-163">
-                    <a href="#"><span>Features</span></a>
-                    <ul class="sub-menu">
-                        <li id="menu_mobile-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168">
-                            <a href="typography/index.html"><span>Typography</span></a>
-                        </li>
-                        <li id="menu_mobile-item-166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-166">
-                            <a href="shortcodes/index.html"><span>Shortcodes</span></a>
-                        </li>
-                        <li id="menu_mobile-item-165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165">
-                            <a href="service-plus/index.html"><span>Service Plus</span></a>
-                        </li>
-                        <li id="menu_mobile-item-1198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1198">
-                            <a href="privacy-policy/index.html"><span>Privacy Policy</span></a>
-                        </li>
-                        <li id="menu_mobile-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164">
-                            <a href="gallery/index.html"><span>Gallery</span></a>
-                        </li>
-                        <li id="menu_mobile-item-171" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-171">
-                            <a href="#"><span>Blog</span></a>
-                            <ul class="sub-menu">
-                                <li id="menu_mobile-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172">
-                                    <a href="all-posts/index.html"><span>All Posts</span></a>
-                                </li>
-                                <li id="menu_mobile-item-173" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-173">
-                                    <a href="#"><span>Classic Style</span></a>
-                                    <ul class="sub-menu">
-                                        <li id="menu_mobile-item-174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174">
-                                            <a href="blog-classic-2-columns/index.html"><span>2 Columns</span></a>
-                                        </li>
-                                        <li id="menu_mobile-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175">
-                                            <a href="blog-classic-3-columns/index.html"><span>3 Columns</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="menu_mobile-item-176" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-176">
-                                    <a href="#"><span>Portfolio Style</span></a>
-                                    <ul class="sub-menu">
-                                        <li id="menu_mobile-item-177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177">
-                                            <a href="blog-portfolio-2-columns/index.html"><span>2 Columns</span></a>
-                                        </li>
-                                        <li id="menu_mobile-item-178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-178">
-                                            <a href="blog-portfolio-3-columns/index.html"><span>3 Columns</span></a>
-                                        </li>
-                                        <li id="menu_mobile-item-179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179">
-                                            <a href="blog-portfolio-4-columns/index.html"><span>4 Columns</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="menu_mobile-item-180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-180">
-                                    <a href="#"><span>Chess Style</span></a>
-                                    <ul class="sub-menu">
-                                        <li id="menu_mobile-item-181" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-181">
-                                            <a href="blog-chess-1-column/index.html"><span>1 Column</span></a>
-                                        </li>
-                                        <li id="menu_mobile-item-182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-182">
-                                            <a href="blog-chess-2-columns/index.html"><span>2 Columns</span></a>
-                                        </li>
-                                        <li id="menu_mobile-item-183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-183">
-                                            <a href="blog-chess-3-columns/index.html"><span>3 Columns</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li id="menu_mobile-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-238">
-                    <a href="#"><span>About</span></a>
-                    <ul class="sub-menu">
-                        <li id="menu_mobile-item-320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-320">
-                            <a href="our-mission/index.html"><span>Our Mission</span></a>
-                        </li>
-                        <li id="menu_mobile-item-321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321">
-                            <a href="our-history/index.html"><span>Our History</span></a>
-                        </li>
-                        <li id="menu_mobile-item-262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262">
-                            <a href="our-courses/index.html"><span>Our Courses</span></a>
-                        </li>
-                        <li id="menu_mobile-item-278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-278">
-                            <a href="the-ranges/index.html"><span>The Ranges</span></a>
-                        </li>
-                        <li id="menu_mobile-item-263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263">
-                            <a href="event/index.html"><span>Events</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li id="menu_mobile-item-296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-296">
-                    <a href="our-services/index.html"><span>Services</span></a>
-                </li>
-                <li id="menu_mobile-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221">
-                    <a href="shop/index.html"><span>Store</span></a>
-                </li>
-                <li id="menu_mobile-item-184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-184">
-                    <a href="contacts/index.html"><span>Contacts</span></a>
-                </li>
+                {% endfor %}
             </ul>
         </nav>
-        <div class="search_wrap search_style_normal search_mobile">
-            <div class="search_form_wrap">
-                <form role="search" method="get" class="search_form" action="/">
-                    <input type="hidden" value="" name="post_types" />
-                    <input type="text" class="search_field" placeholder="Search" value="" name="s" />
-                    <button type="submit" class="search_submit trx_addons_icon-search"></button>
-                </form>
-            </div>
-        </div>
-        <div class="socials_mobile">
-            {% for social in site.data.general_settings.social %}
-            <a target="_blank" href="{{social.link}}" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
-                <span class="social_icon social_icon_{{social.icon}}"><span class="icon-{{social.icon}}"></span></span>
-            </a>
-           {% endfor %}
-        </div>
     </div>
 </div>
