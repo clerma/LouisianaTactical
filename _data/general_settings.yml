@@ -1,18 +1,12 @@
 site_logo_url: /assets/images/logo.svg
-site_name: Louisiana Tactical	
+site_name: LA Tactical Supply
 email: Louisianatactical@yahoo.com
 phone: 337-224-1729
-address: 907 Country Ridge Rd Opelousas, LA 70570
-ga_id: 
+address: 907 Country Ridge Rd, Opelousas, LA 70570
+ga_id:
 head_code: ''
 footer_code: ''
 social:
-  - name: Instagram
-    link: https://instagram.com/scoutrealestateco
-    icon: instagram
   - name: Facebook
-    link: https://facebook.com/Loiusiana.Tactical
+    link: https://www.facebook.com/profile.php?id=100069392407833
     icon: facebook
-  # - name: Youtube
-  #   link: https://www.youtube.com/channel/UCnEJTuCvF082zAAjpeasQIA
-  #   icon: youtube

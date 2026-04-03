@@ -5,56 +5,29 @@ site_primary_menu:
     menu_url: /about
   - menu_title: SERVICES
     menu_url: /services
-  - menu_title: PRODUCTS
-    menu_url: /products
   - menu_title: CONTACT
     menu_url: /contact
 
-dropdown_menu_title: FEATURED ITEMS
-dropdown_menu_lists:
-  - menu_title: FIREARMS
-    menu_url: /firearms
-  - menu_title: AMMUNITION
-    menu_url: /ammunition
-  - menu_title: ACCESSORIES
-    menu_url: /accessories
-  - menu_title: TRAINING
-    menu_url: /training
-  - menu_title: GEAR
-    menu_url: /gear
-  - menu_title: CUSTOM BUILDS
-    menu_url: /custom-builds
-  - menu_title: GUNSMITHING
-    menu_url: /gunsmithing
-  - menu_title: TACTICAL EQUIPMENT
-    menu_url: /tactical-equipment
-  - menu_title: SAFETY EQUIPMENT
-    menu_url: /safety-equipment
-
-footer_courses_menu:
-  title: Courses
+footer_services_menu:
+  title: Services
   items:
-    - menu_title: Carbine Training
-      menu_url: /courses/carbine-training
-    - menu_title: Rifle Training
-      menu_url: /courses/rifle-training
-    - menu_title: Gun Service Course
-      menu_url: /courses/gun-service-course
-    - menu_title: Tactical Medicine
-      menu_url: /courses/tactical-medicine
-    - menu_title: Shotgun Course
-      menu_url: /courses/shotgun-course
+    - menu_title: FFL Transfers
+      menu_url: /services
+    - menu_title: Gunsmithing
+      menu_url: /services
+    - menu_title: Firearms Sales
+      menu_url: /services
+    - menu_title: Ammunition
+      menu_url: /services
+    - menu_title: Accessories & Gear
+      menu_url: /services
 
 footer_company_menu:
-  title: Company Info
+  title: Company
   items:
-    - menu_title: Events
-      menu_url: /event
-    - menu_title: Our Mission
-      menu_url: /our-mission
+    - menu_title: About Us
+      menu_url: /about
     - menu_title: Services
-      menu_url: /our-services
-    - menu_title: Our History
-      menu_url: /our-history
-    - menu_title: The Ranges
-      menu_url: /the-ranges
+      menu_url: /services
+    - menu_title: Contact
+      menu_url: /contact

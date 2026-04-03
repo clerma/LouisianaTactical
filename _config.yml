@@ -60,8 +60,19 @@ collections:
       path: _pages/index.html
       values:
         permalink:
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: ""
+
+title: "LA Tactical Supply"
+description: "Your local FFL dealer in Opelousas, Louisiana. Firearms, ammunition, optics, tactical gear, FFL transfers, and gunsmithing. Located at 907 Country Ridge Rd, Opelousas, LA 70570."
+phone: "337-224-1729"
+email: "Louisianatactical@yahoo.com"
+address:
+  street: "907 Country Ridge Rd"
+  city: "Opelousas"
+  region: "LA"
+  zip: "70570"
+  country: "US"
 
 
 # Build settings
