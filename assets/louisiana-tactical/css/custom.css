@@ -935,3 +935,25 @@ form.mc4wp-form .mc4wp-form-fields input[type="submit"] {
 .vc_custom_1548161042653 {
 	background-size: cover !important;
 }
+
+/* ── LA Tactical: Page Hero ─────────────────────────────────────── */
+.la-page-hero {
+    position: relative;
+}
+.la-page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 14, 8, 0.72);
+    z-index: 0;
+}
+.la-page-hero .sc_layouts_title_caption {
+    color: #fff;
+}
+.la-page-hero-tagline {
+    color: rgba(255, 255, 255, 0.72);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0;
+}
