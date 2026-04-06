@@ -957,3 +957,13 @@ form.mc4wp-form .mc4wp-form-fields input[type="submit"] {
     text-transform: uppercase;
     margin: 0;
 }
+
+/* ── LA Tactical: Layout fixes ──────────────────────────────────── */
+/* Remove content area bottom padding so dark last-rows sit flush */
+.page_content_wrap .content_wrap {
+    padding-bottom: 0 !important;
+}
+.page_content_wrap .content {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
