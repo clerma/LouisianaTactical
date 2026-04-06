@@ -14,30 +14,8 @@ collections_config:
     disable_add: false
     disable_add_folder: true
     disable_file_actions: false
-    _enabled_editors:
-      - data
-  data:
-    path: _data
-    output: false
-    icon: notes
-    disable_add: true
-    disable_add_folder: true
-    disable_file_actions: true
 
 collections_config_override: true
-
-# ─── Data files ───────────────────────────────────────────────────────────────
-data_config:
-  general_settings:
-    path: _data/general_settings.yml
-  slider:
-    path: _data/slider.yml
-  services:
-    path: _data/services.yml
-  gallery:
-    path: _data/gallery.yml
-  site_navigation:
-    path: _data/site_navigation.yml
 
 # ─── Input types ──────────────────────────────────────────────────────────────
 _inputs:
@@ -52,7 +30,6 @@ _inputs:
   hero_bg:
     type: image
     label: Hero Background Photo
-    comment: Wide photo used as the banner background
     options:
       paths:
         uploads: assets/images/latact
@@ -63,7 +40,79 @@ _inputs:
     type: text
     label: SEO Keywords
 
-  # ── Site settings ──
+  # ── About page ──
+  body_heading:
+    type: text
+    label: Heading
+  body_paragraphs:
+    type: array
+    label: Body Paragraphs
+  body_image:
+    type: image
+    label: Side Photo
+    options:
+      paths:
+        uploads: assets/images/latact
+  gallery_heading:
+    type: text
+    label: Gallery Heading
+  gallery_cta:
+    type: text
+    label: Gallery Caption
+  why_choose_heading:
+    type: text
+    label: Section Heading
+  why_choose:
+    type: array
+    label: Why Choose Items
+
+  # ── Services page ──
+  page_heading:
+    type: text
+    label: Page Heading
+  page_subheading:
+    type: text
+    label: Page Subheading
+  product_photos:
+    type: array
+    label: Product Photos
+  cta_bg:
+    type: image
+    label: CTA Background Photo
+    options:
+      paths:
+        uploads: assets/images/latact
+  cta_eyebrow:
+    type: text
+    label: CTA Eyebrow Text
+  cta_title:
+    type: text
+    label: CTA Heading
+  cta_description:
+    type: text
+    label: CTA Address
+  cta_phone:
+    type: text
+    label: CTA Phone
+  cta_button:
+    type: text
+    label: CTA Button Label
+
+  # ── Contact page ──
+  page_heading:
+    type: text
+    label: Section Heading
+  hours_text:
+    type: text
+    label: Hours Text
+  ffl_note:
+    type: textarea
+    label: FFL Transfer Note
+  photo_strip:
+    type: array
+    label: Photo Strip Images
+
+  # ── Site settings (general_settings.yml) ──
   site_name:
     type: text
     label: Site Name
@@ -84,10 +133,10 @@ _inputs:
     label: Google Analytics ID
     comment: Leave blank to disable
 
-  # ── Slider ──
+  # ── Slider (slider.yml) ──
   name:
     type: text
-    label: Slide Name (internal)
+    label: Slide Name (internal label)
   image:
     type: image
     label: Slide Background Photo
@@ -111,7 +160,7 @@ _inputs:
     label: Overlay Color (rgba)
     comment: "e.g. rgba(35, 30, 24, 0.82)"
 
-  # ── Services ──
+  # ── Services (services.yml) ──
   icon:
     type: select
     label: Icon
@@ -124,12 +173,12 @@ _inputs:
         - icon-paintball
         - icon-bulletproof-vest-2
 
-  # ── Gallery ──
+  # ── Gallery (gallery.yml) ──
   alt:
     type: text
     label: Alt Text
 
-  # ── Navigation ──
+  # ── Navigation (site_navigation.yml) ──
   menu_title:
     type: text
     label: Menu Label
@@ -139,6 +188,34 @@ _inputs:
 
 # ─── Array item templates ─────────────────────────────────────────────────────
 _structures:
+  why_choose:
+    values:
+      - label: Feature
+        icon: article
+        value:
+          icon: icon-revolver
+          title: ''
+          description: ''
+
+  body_paragraphs:
+    values:
+      - label: Paragraph
+        icon: notes
+        value: ''
+
+  product_photos:
+    values:
+      - label: Photo
+        icon: image
+        value: ''
+
+  photo_strip:
+    values:
+      - label: Photo
+        icon: image
+        value: ''
+
+  # ── slider.yml array ──
   site_data_slider:
     values:
       - label: Slide
@@ -153,6 +230,7 @@ _structures:
           link_text: Learn More
           bg_color: "rgba(35, 30, 24, 0.82)"
 
+  # ── services.yml array ──
   site_data_services:
     values:
       - label: Service
@@ -162,6 +240,7 @@ _structures:
           icon: icon-revolver
           description: ''
 
+  # ── gallery.yml array ──
   site_data_gallery:
     values:
       - label: Photo
@@ -170,6 +249,7 @@ _structures:
           image: ''
           alt: LA Tactical Supply
 
+  # ── navigation arrays ──
   site_primary_menu:
     values:
       - label: Menu Item
@@ -187,7 +267,7 @@ _structures:
           link: ''
           icon: ''
 
-# ─── Rich text editor config ──────────────────────────────────────────────────
+# ─── Rich text editor ─────────────────────────────────────────────────────────
 _editables:
   content:
     bold: true

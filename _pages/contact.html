@@ -6,6 +6,17 @@ hero_bg: '/assets/images/latact/486726891_978317624491309_6475241287826585450_n.
 description: Contact LA Tactical Supply LLC at 907 Country Ridge Rd, Opelousas, LA 70570. Call 337-224-1729 or email Louisianatactical@yahoo.com. Licensed FFL dealer serving St. Landry Parish.
 keywords: contact LA Tactical Supply, gun shop Opelousas LA, FFL dealer contact, firearms store Louisiana directions
 permalink: /contact
+
+page_heading: "Get In Touch"
+hours_text: "Call or check our Facebook page for current store hours."
+ffl_note: "Planning to ship a firearm to us? Call us first so we can coordinate the transfer. FFL License #709824909."
+
+photo_strip:
+  - /assets/images/latact/486161931_978159751173763_2005953470016216238_n.jpg
+  - /assets/images/latact/486176114_978159634507108_2872626525365008329_n.jpg
+  - /assets/images/latact/486243310_978317611157977_4826938576457541235_n.jpg
+  - /assets/images/latact/486246647_978459397810465_4896177815482669549_n.jpg
+  - /assets/images/latact/486280318_978159777840427_7541757502251446023_n.jpg
 ---
 
 <!-- CONTACT INFO + MAP -->
@@ -16,7 +27,7 @@ permalink: /contact
 
                 <div class="sc_title sc_title_accent">
                     <h2 class="sc_item_title sc_title_title sc_align_left sc_item_title_style_accent">
-                        <span class="sc_item_title_text">Get In Touch</span>
+                        <span class="sc_item_title_text">{{ page.page_heading }}</span>
                     </h2>
                 </div>
 
@@ -79,7 +90,7 @@ permalink: /contact
                                 <div class="sc_icons_item_details">
                                     <h5 class="sc_icons_title" style="margin-bottom:4px;"><span>Hours</span></h5>
                                     <div class="sc_icons_item_description">
-                                        <p style="margin:0;">Call or check our Facebook page for current store hours.</p>
+                                        <p style="margin:0;">{{ page.hours_text }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -125,11 +136,9 @@ permalink: /contact
         <div class="vc_column-inner" style="padding:0;">
             <div class="wpb_wrapper">
                 <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:4px;">
-                    <img loading="lazy" src="/assets/images/latact/486161931_978159751173763_2005953470016216238_n.jpg" alt="LA Tactical Supply" style="width:100%;height:160px;object-fit:cover;display:block;" />
-                    <img loading="lazy" src="/assets/images/latact/486176114_978159634507108_2872626525365008329_n.jpg" alt="LA Tactical Supply" style="width:100%;height:160px;object-fit:cover;display:block;" />
-                    <img loading="lazy" src="/assets/images/latact/486243310_978317611157977_4826938576457541235_n.jpg" alt="LA Tactical Supply" style="width:100%;height:160px;object-fit:cover;display:block;" />
-                    <img loading="lazy" src="/assets/images/latact/486246647_978459397810465_4896177815482669549_n.jpg" alt="LA Tactical Supply" style="width:100%;height:160px;object-fit:cover;display:block;" />
-                    <img loading="lazy" src="/assets/images/latact/486280318_978159777840427_7541757502251446023_n.jpg" alt="LA Tactical Supply" style="width:100%;height:160px;object-fit:cover;display:block;" />
+                    {% for photo in page.photo_strip %}
+                    <img loading="lazy" src="{{ photo }}" alt="LA Tactical Supply" style="width:100%;height:160px;object-fit:cover;display:block;" />
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -144,7 +153,7 @@ permalink: /contact
         <div class="vc_column-inner">
             <div class="wpb_wrapper" style="text-align:center;">
                 <p style="margin:0;font-size:1.05em;">
-                    <strong>FFL Transfers:</strong> Planning to ship a firearm to us? Call <a href="tel:+13372241729" style="color:inherit;">337-224-1729</a> first so we can coordinate the transfer. FFL License #709824909.
+                    <strong>FFL Transfers:</strong> {{ page.ffl_note }}
                 </p>
             </div>
         </div>
