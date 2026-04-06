@@ -1,84 +1,210 @@
 paths:
-  uploads: uploads
+  uploads: assets/images/latact
   static: ''
-  dam_uploads: ''
-  dam_static: ''
-  collections: ''
   data: _data
   layouts: _layouts
   includes: _includes
+
+# ─── Collections ──────────────────────────────────────────────────────────────
 collections_config:
-  data:
-    path: _data
-    icon: notes
-    output: false
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-  posts:
-    path: _posts
-    icon: notes
-    output: true
-    create:
-      path: >-
-        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
   pages:
     path: _pages
-    icon: notes
     output: true
-    filter: strict
+    icon: article
     disable_add: false
-    disable_add_folder: false
+    disable_add_folder: true
     disable_file_actions: false
+    _enabled_editors:
+      - data
+  data:
+    path: _data
+    output: false
+    icon: notes
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+
 collections_config_override: true
+
+# ─── Data files ───────────────────────────────────────────────────────────────
+data_config:
+  general_settings:
+    path: _data/general_settings.yml
+  slider:
+    path: _data/slider.yml
+  services:
+    path: _data/services.yml
+  gallery:
+    path: _data/gallery.yml
+  site_navigation:
+    path: _data/site_navigation.yml
+
+# ─── Input types ──────────────────────────────────────────────────────────────
 _inputs:
-  categories:
-    type: multiselect
+  # ── Page front matter ──
+  title:
+    type: text
+    label: Page Title
+  hero_tagline:
+    type: text
+    label: Hero Tagline
+    comment: Subtitle shown in the page banner below the title
+  hero_bg:
+    type: image
+    label: Hero Background Photo
+    comment: Wide photo used as the banner background
     options:
-      allow_create: true
-      allow_empty: true
-      empty_type: array
-    cascade: true
-  tags:
-    type: multiselect
+      paths:
+        uploads: assets/images/latact
+  description:
+    type: textarea
+    label: SEO Description
+  keywords:
+    type: text
+    label: SEO Keywords
+
+  # ── Site settings ──
+  site_name:
+    type: text
+    label: Site Name
+  phone:
+    type: text
+    label: Phone Number
+  email:
+    type: email
+    label: Email Address
+  address:
+    type: text
+    label: Address
+  site_logo_url:
+    type: image
+    label: Logo
+  ga_id:
+    type: text
+    label: Google Analytics ID
+    comment: Leave blank to disable
+
+  # ── Slider ──
+  name:
+    type: text
+    label: Slide Name (internal)
+  image:
+    type: image
+    label: Slide Background Photo
     options:
-      allow_create: true
-      allow_empty: true
-      empty_type: array
-    cascade: true
+      paths:
+        uploads: assets/images/latact
+  thumbnail:
+    type: image
+    label: Thumbnail
+    options:
+      paths:
+        uploads: assets/images/latact
+  link:
+    type: url
+    label: Button URL
+  link_text:
+    type: text
+    label: Button Label
+  bg_color:
+    type: text
+    label: Overlay Color (rgba)
+    comment: "e.g. rgba(35, 30, 24, 0.82)"
+
+  # ── Services ──
+  icon:
+    type: select
+    label: Icon
+    options:
+      values:
+        - icon-revolver
+        - icon-target
+        - icon-target-2
+        - icon-bullet-3
+        - icon-paintball
+        - icon-bulletproof-vest-2
+
+  # ── Gallery ──
+  alt:
+    type: text
+    label: Alt Text
+
+  # ── Navigation ──
+  menu_title:
+    type: text
+    label: Menu Label
+  menu_url:
+    type: url
+    label: URL
+
+# ─── Array item templates ─────────────────────────────────────────────────────
+_structures:
+  site_data_slider:
+    values:
+      - label: Slide
+        icon: image
+        value:
+          name: New Slide
+          image: ''
+          thumbnail: ''
+          title: ''
+          text: ''
+          link: /services
+          link_text: Learn More
+          bg_color: "rgba(35, 30, 24, 0.82)"
+
+  site_data_services:
+    values:
+      - label: Service
+        icon: article
+        value:
+          title: New Service
+          icon: icon-revolver
+          description: ''
+
+  site_data_gallery:
+    values:
+      - label: Photo
+        icon: image
+        value:
+          image: ''
+          alt: LA Tactical Supply
+
+  site_primary_menu:
+    values:
+      - label: Menu Item
+        icon: link
+        value:
+          menu_title: ''
+          menu_url: /
+
+  social:
+    values:
+      - label: Social Link
+        icon: link
+        value:
+          name: ''
+          link: ''
+          icon: ''
+
+# ─── Rich text editor config ──────────────────────────────────────────────────
 _editables:
-  text:
-    allow_custom_markup: true
-    remove_custom_markup: false
+  content:
     bold: true
-    copyformatting: true
     italic: true
+    underline: true
     link: true
-    paths:
+    bulletedlist: true
+    numberedlist: true
+    blockquote: true
+    image: true
+    undo: true
     redo: true
     removeformat: true
-    strike: true
-    subscript:
-    superscript:
-    underline: true
-    undo: true
-  image:
-    correct_orientation: true
-    expandable: true
-    height: 100
-    image_size_attributes: true
-    mime_type:
+    copyformatting: true
     paths:
-    resize_style: cover
-    width: 100
-  link:
-    paths:
-      uploads:
-      dam_uploads:
-      dam_static:
+      uploads: assets/images/latact
+
 editor:
-  default_path:
-timezone: Etc/UTC
+  default_path: /
+timezone: America/Chicago
