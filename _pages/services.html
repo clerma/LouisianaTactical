@@ -22,79 +22,19 @@ permalink: /services
 
                 <div class="sc_icons sc_icons_default sc_icons_size_small sc_align_center">
                     <div class="sc_icons_columns_wrap sc_item_columns trx_addons_columns_wrap columns_padding_bottom">
-
+                        {% for service in site.data.services %}
                         <div class="trx_addons_column-1_3">
                             <div class="sc_icons_item">
-                                <div class="sc_icons_icon sc_icon_type_ icon-revolver"><span class="sc_icon_type_ icon-revolver"></span></div>
+                                <div class="sc_icons_icon sc_icon_type_ {{ service.icon }}"><span class="sc_icon_type_ {{ service.icon }}"></span></div>
                                 <div class="sc_icons_item_details">
-                                    <h5 class="sc_icons_title"><span>Firearms Sales</span></h5>
+                                    <h5 class="sc_icons_title"><span>{{ service.title }}</span></h5>
                                     <div class="sc_icons_item_description">
-                                        <p>We carry a wide selection of new and used handguns, rifles, and shotguns. Whether you're looking for a home-defense pistol, a hunting rifle, or a tactical shotgun, we can help you find the right fit.</p>
+                                        <p>{{ service.description }}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="trx_addons_column-1_3">
-                            <div class="sc_icons_item">
-                                <div class="sc_icons_icon sc_icon_type_ icon-target"><span class="sc_icon_type_ icon-target"></span></div>
-                                <div class="sc_icons_item_details">
-                                    <h5 class="sc_icons_title"><span>FFL Transfers</span></h5>
-                                    <div class="sc_icons_item_description">
-                                        <p>As a licensed FFL dealer (#709824909), we can receive firearms purchased online and shipped from other dealers. We handle the required paperwork and background check so the process is smooth and legal. Call us to coordinate your transfer before shipping.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="trx_addons_column-1_3">
-                            <div class="sc_icons_item">
-                                <div class="sc_icons_icon sc_icon_type_ icon-target-2"><span class="sc_icon_type_ icon-target-2"></span></div>
-                                <div class="sc_icons_item_details">
-                                    <h5 class="sc_icons_title"><span>Gunsmithing</span></h5>
-                                    <div class="sc_icons_item_description">
-                                        <p>From routine cleaning and maintenance to repairs and custom modifications, our gunsmiths treat every firearm with expert care. Bring in your firearm for a consultation and we'll get it running right.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="trx_addons_column-1_3">
-                            <div class="sc_icons_item">
-                                <div class="sc_icons_icon sc_icon_type_ icon-bullet-3"><span class="sc_icon_type_ icon-bullet-3"></span></div>
-                                <div class="sc_icons_item_details">
-                                    <h5 class="sc_icons_title"><span>Ammunition</span></h5>
-                                    <div class="sc_icons_item_description">
-                                        <p>We stock pistol, rifle, and shotgun ammunition in popular calibers. Whether you need practice rounds or self-defense loads, we carry reliable brands at competitive prices.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="trx_addons_column-1_3">
-                            <div class="sc_icons_item">
-                                <div class="sc_icons_icon sc_icon_type_ icon-paintball"><span class="sc_icon_type_ icon-paintball"></span></div>
-                                <div class="sc_icons_item_details">
-                                    <h5 class="sc_icons_title"><span>Optics &amp; Accessories</span></h5>
-                                    <div class="sc_icons_item_description">
-                                        <p>Scopes, red dots, holsters, slings, magazines, cleaning kits, and tactical gear. We carry accessories to help you get the most out of your firearm.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="trx_addons_column-1_3">
-                            <div class="sc_icons_item">
-                                <div class="sc_icons_icon sc_icon_type_ icon-bulletproof-vest-2"><span class="sc_icon_type_ icon-bulletproof-vest-2"></span></div>
-                                <div class="sc_icons_item_details">
-                                    <h5 class="sc_icons_title"><span>Layaway Available</span></h5>
-                                    <div class="sc_icons_item_description">
-                                        <p>Want to hold a firearm while you save up? Ask us about our layaway program. We want to make it easy for you to get the firearm you want.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        {% endfor %}
                     </div>
                 </div>
             </div>
