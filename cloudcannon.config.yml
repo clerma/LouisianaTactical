@@ -4,167 +4,242 @@ paths:
   data: _data
   layouts: _layouts
   includes: _includes
-
-# ─── Collections ──────────────────────────────────────────────────────────────
 collections_config:
   pages:
     path: _pages
-    output: true
     icon: article
+    output: true
     disable_add: false
     disable_add_folder: true
     disable_file_actions: false
-
+  posts:
+    path: _posts
+    glob:
+    name:
+    singular_name:
+    icon: notes
+    output: false
+    url:
+    filter:
+    parse_branch_index:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    view_options:
+    singular_key:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
+  data:
+    path: _data
+    glob:
+    name:
+    singular_name:
+    icon: notes
+    output: false
+    url:
+    filter:
+    parse_branch_index:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    view_options:
+    singular_key:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
 collections_config_override: true
-
-# ─── Input types ──────────────────────────────────────────────────────────────
 _inputs:
-  # ── Page front matter ──
   title:
     type: text
     label: Page Title
+    cascade: true
   hero_tagline:
     type: text
     label: Hero Tagline
     comment: Subtitle shown in the page banner below the title
+    cascade: true
   hero_bg:
     type: image
-    label: Hero Background Photo
     options:
       paths:
         uploads: assets/images/latact
+    label: Hero Background Photo
+    cascade: true
   description:
     type: textarea
     label: SEO Description
+    cascade: true
   keywords:
     type: text
     label: SEO Keywords
-
-  # ── About page ──
+    cascade: true
   body_heading:
     type: text
     label: Heading
+    cascade: true
   body_paragraphs:
     type: array
     label: Body Paragraphs
+    cascade: true
   body_image:
     type: image
-    label: Side Photo
     options:
       paths:
         uploads: assets/images/latact
+    label: Side Photo
+    cascade: true
   gallery_heading:
     type: text
     label: Gallery Heading
+    cascade: true
   gallery_cta:
     type: text
     label: Gallery Caption
+    cascade: true
   why_choose_heading:
     type: text
     label: Section Heading
+    cascade: true
   why_choose:
     type: array
     label: Why Choose Items
-
-  # ── Services page ──
-  page_heading:
-    type: text
-    label: Page Heading
-  page_subheading:
-    type: text
-    label: Page Subheading
-  product_photos:
-    type: array
-    label: Product Photos
-  cta_bg:
-    type: image
-    label: CTA Background Photo
-    options:
-      paths:
-        uploads: assets/images/latact
-  cta_eyebrow:
-    type: text
-    label: CTA Eyebrow Text
-  cta_title:
-    type: text
-    label: CTA Heading
-  cta_description:
-    type: text
-    label: CTA Address
-  cta_phone:
-    type: text
-    label: CTA Phone
-  cta_button:
-    type: text
-    label: CTA Button Label
-
-  # ── Contact page ──
+    cascade: true
   page_heading:
     type: text
     label: Section Heading
+    cascade: true
+  page_subheading:
+    type: text
+    label: Page Subheading
+    cascade: true
+  product_photos:
+    type: array
+    label: Product Photos
+    cascade: true
+  cta_bg:
+    type: image
+    options:
+      paths:
+        uploads: assets/images/latact
+    label: CTA Background Photo
+    cascade: true
+  cta_eyebrow:
+    type: text
+    label: CTA Eyebrow Text
+    cascade: true
+  cta_title:
+    type: text
+    label: CTA Heading
+    cascade: true
+  cta_description:
+    type: text
+    label: CTA Address
+    cascade: true
+  cta_phone:
+    type: text
+    label: CTA Phone
+    cascade: true
+  cta_button:
+    type: text
+    label: CTA Button Label
+    cascade: true
   hours_text:
     type: text
     label: Hours Text
+    cascade: true
   ffl_note:
     type: textarea
     label: FFL Transfer Note
+    cascade: true
   photo_strip:
     type: array
     label: Photo Strip Images
-
-  # ── Site settings (general_settings.yml) ──
+    cascade: true
   site_name:
     type: text
     label: Site Name
+    cascade: true
   phone:
     type: text
     label: Phone Number
+    cascade: true
   email:
     type: email
     label: Email Address
+    cascade: true
   address:
     type: text
     label: Address
+    cascade: true
   site_logo_url:
     type: image
     label: Logo
+    cascade: true
   ga_id:
     type: text
     label: Google Analytics ID
     comment: Leave blank to disable
-
-  # ── Slider (slider.yml) ──
+    cascade: true
   name:
     type: text
     label: Slide Name (internal label)
+    cascade: true
   image:
     type: image
-    label: Slide Background Photo
     options:
       paths:
         uploads: assets/images/latact
+    label: Slide Background Photo
+    cascade: true
   thumbnail:
     type: image
-    label: Thumbnail
     options:
       paths:
         uploads: assets/images/latact
+    label: Thumbnail
+    cascade: true
   link:
     type: url
     label: Button URL
+    cascade: true
   link_text:
     type: text
     label: Button Label
+    cascade: true
   bg_color:
     type: text
     label: Overlay Color (rgba)
-    comment: "e.g. rgba(35, 30, 24, 0.82)"
-
-  # ── Services (services.yml) ──
+    comment: e.g. rgba(35, 30, 24, 0.82)
+    cascade: true
   icon:
     type: select
-    label: Icon
     options:
+      allow_empty: true
       values:
         - icon-revolver
         - icon-target
@@ -172,54 +247,53 @@ _inputs:
         - icon-bullet-3
         - icon-paintball
         - icon-bulletproof-vest-2
-
-  # ── Gallery (gallery.yml) ──
+    label: Icon
+    cascade: true
   alt:
     type: text
     label: Alt Text
-
-  # ── Navigation (site_navigation.yml) ──
+    cascade: true
   menu_title:
     type: text
     label: Menu Label
+    cascade: true
   menu_url:
     type: url
     label: URL
-
-# ─── Array item templates ─────────────────────────────────────────────────────
+    cascade: true
 _structures:
   why_choose:
+    style: select
     values:
-      - label: Feature
-        icon: article
+      - icon: article
+        label: Feature
         value:
           icon: icon-revolver
           title: ''
           description: ''
-
   body_paragraphs:
+    style: select
     values:
-      - label: Paragraph
-        icon: notes
+      - icon: notes
+        label: Paragraph
         value: ''
-
   product_photos:
+    style: select
     values:
-      - label: Photo
-        icon: image
+      - icon: image
+        label: Photo
         value: ''
-
   photo_strip:
+    style: select
     values:
-      - label: Photo
-        icon: image
+      - icon: image
+        label: Photo
         value: ''
-
-  # ── slider.yml array ──
   site_data_slider:
+    style: select
     values:
-      - label: Slide
-        icon: image
+      - icon: image
+        label: Slide
         value:
           name: New Slide
           image: ''
@@ -228,63 +302,60 @@ _structures:
           text: ''
           link: /services
           link_text: Learn More
-          bg_color: "rgba(35, 30, 24, 0.82)"
-
-  # ── services.yml array ──
+          bg_color: rgba(35, 30, 24, 0.82)
   site_data_services:
+    style: select
     values:
-      - label: Service
-        icon: article
+      - icon: article
+        label: Service
         value:
           title: New Service
           icon: icon-revolver
           description: ''
-
-  # ── gallery.yml array ──
   site_data_gallery:
+    style: select
     values:
-      - label: Photo
-        icon: image
+      - icon: image
+        label: Photo
         value:
           image: ''
           alt: LA Tactical Supply
-
-  # ── navigation arrays ──
   site_primary_menu:
+    style: select
     values:
-      - label: Menu Item
-        icon: link
+      - icon: link
+        label: Menu Item
         value:
           menu_title: ''
           menu_url: /
-
   social:
+    style: select
     values:
-      - label: Social Link
-        icon: link
+      - icon: link
+        label: Social Link
         value:
           name: ''
           link: ''
           icon: ''
-
-# ─── Rich text editor ─────────────────────────────────────────────────────────
 _editables:
   content:
-    bold: true
-    italic: true
-    underline: true
-    link: true
-    bulletedlist: true
-    numberedlist: true
+    allow_custom_markup: false
+    remove_custom_markup: false
     blockquote: true
-    image: true
-    undo: true
-    redo: true
-    removeformat: true
+    bold: true
+    bulletedlist: true
     copyformatting: true
+    image: true
+    image_size_attributes: true
+    italic: true
+    link: true
+    numberedlist: true
     paths:
       uploads: assets/images/latact
-
+    redo: true
+    removeformat: true
+    underline: true
+    undo: true
 editor:
   default_path: /
 timezone: America/Chicago
